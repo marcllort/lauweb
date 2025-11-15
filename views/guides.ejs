@@ -1,34 +1,44 @@
 <%- include('partials/header') %>
 
-<!-- Guides Hero Section -->
-<section class="bg-sand-tan text-white py-20">
-  <div class="container mx-auto px-6 text-center">
-    <h1 class="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
-      My Guides
-    </h1>
-    <p class="text-xl md:text-2xl font-light max-w-3xl mx-auto animate-slide-up">
-      Practical tips, hidden gems, and authentic experiences from my travels.
-    </p>
+<!-- Hero Section -->
+<section class="relative bg-gradient-to-br from-primary-blue via-blue-dark to-forest-green text-pure-white pt-32 pb-20 overflow-hidden">
+  <!-- Pattern Overlay -->
+  <div class="absolute inset-0 opacity-10 grid-pattern"></div>
+
+  <div class="container-custom relative z-10">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="badge bg-pure-white/20 text-pure-white border border-pure-white/30 mb-6">
+        Travel Guides
+      </span>
+
+      <h1 class="text-5xl md:text-7xl font-outfit font-bold mb-6 leading-tight animate-fade-in">
+        Your Next Adventure
+      </h1>
+
+      <p class="text-xl md:text-2xl text-pure-white/90 max-w-2xl mx-auto animate-slide-up">
+        Carefully crafted guides with practical tips, hidden gems, and authentic experiences.
+      </p>
+    </div>
   </div>
 </section>
 
-<!-- Filter Section (Optional for future) -->
-<section class="py-8 bg-sand-white border-b border-sand-soft">
-  <div class="container mx-auto px-6">
-    <div class="flex flex-wrap justify-center gap-4">
-      <button class="px-6 py-2 rounded-full bg-sand-tan text-white font-medium transition-all duration-300 hover:bg-opacity-90">
+<!-- Filter Section -->
+<section class="py-12 bg-pure-white border-b border-border-gray">
+  <div class="container-custom">
+    <div class="flex flex-wrap justify-center gap-3">
+      <button class="px-6 py-2.5 rounded-full bg-primary-blue text-pure-white text-sm font-medium transition-all duration-300 hover:shadow-medium">
         All Guides
       </button>
-      <button class="px-6 py-2 rounded-full bg-sand-soft text-sand-brown font-medium transition-all duration-300 hover:bg-sand-tan hover:text-white">
+      <button class="px-6 py-2.5 rounded-full bg-off-white text-charcoal text-sm font-medium transition-all duration-300 hover:bg-primary-blue hover:text-pure-white">
         Europe
       </button>
-      <button class="px-6 py-2 rounded-full bg-sand-soft text-sand-brown font-medium transition-all duration-300 hover:bg-sand-tan hover:text-white">
+      <button class="px-6 py-2.5 rounded-full bg-off-white text-charcoal text-sm font-medium transition-all duration-300 hover:bg-primary-blue hover:text-pure-white">
         City Guides
       </button>
-      <button class="px-6 py-2 rounded-full bg-sand-soft text-sand-brown font-medium transition-all duration-300 hover:bg-sand-tan hover:text-white">
+      <button class="px-6 py-2.5 rounded-full bg-off-white text-charcoal text-sm font-medium transition-all duration-300 hover:bg-primary-blue hover:text-pure-white">
         Budget Travel
       </button>
-      <button class="px-6 py-2 rounded-full bg-sand-soft text-sand-brown font-medium transition-all duration-300 hover:bg-sand-tan hover:text-white">
+      <button class="px-6 py-2.5 rounded-full bg-off-white text-charcoal text-sm font-medium transition-all duration-300 hover:bg-primary-blue hover:text-pure-white">
         Food & Drinks
       </button>
     </div>
@@ -36,169 +46,156 @@
 </section>
 
 <!-- Guides Grid -->
-<section class="py-16 bg-sand-light">
-  <div class="container mx-auto px-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+<section class="section-padding bg-broken-white">
+  <div class="container-custom">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
       <!-- Guide Card 1 -->
-      <article class="card overflow-hidden scroll-reveal image-zoom">
-        <div class="h-56 bg-gradient-to-br from-sand-tan to-sand-soft relative">
-          <!-- Replace with actual image: <img src="/assets/images/guides/lisbon.jpg" alt="Lisbon Guide" class="w-full h-full object-cover"> -->
-          <div class="w-full h-full flex items-center justify-center text-white">
-            <span class="text-lg">Guide Photo</span>
-          </div>
-          <div class="absolute top-4 right-4 bg-white text-sand-brown px-3 py-1 rounded-full text-sm font-semibold">
-            City Guide
-          </div>
+      <article class="card card-hover scroll-reveal">
+        <div class="aspect-[4/3] img-placeholder image-hover-scale relative">
+          <span class="absolute top-4 left-4 badge badge-blue">City Guide</span>
         </div>
-        <div class="p-6">
-          <h3 class="text-2xl font-bold text-sand-brown mb-3">
-            Ultimate Guide to Lisbon
+        <div class="p-8">
+          <h3 class="text-2xl font-outfit font-semibold text-charcoal mb-3 hover:text-primary-blue transition-colors">
+            <a href="/guides/lisbon">Ultimate Guide to Lisbon</a>
           </h3>
-          <p class="text-sand-brown mb-4 leading-relaxed">
+          <p class="text-slate mb-6 leading-relaxed">
             Discover the best viewpoints, tastiest pastéis de nata, hidden neighborhoods,
             and budget-friendly tips for exploring Portugal's capital.
           </p>
           <div class="flex items-center justify-between">
-            <a href="/guides/lisbon" class="text-sand-tan font-semibold hover:underline">
-              Read Full Guide →
+            <span class="text-sm text-slate-light">5 min read</span>
+            <a href="/guides/lisbon" class="text-primary-blue font-medium hover:underline text-sm inline-flex items-center gap-1">
+              Read More
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
             </a>
-            <span class="text-sm text-sand-brown opacity-75">5 min read</span>
           </div>
         </div>
       </article>
 
       <!-- Guide Card 2 -->
-      <article class="card overflow-hidden scroll-reveal image-zoom">
-        <div class="h-56 bg-gradient-to-br from-sand-soft to-sand-light relative">
-          <div class="w-full h-full flex items-center justify-center text-sand-brown">
-            <span class="text-lg">Guide Photo</span>
-          </div>
-          <div class="absolute top-4 right-4 bg-white text-sand-brown px-3 py-1 rounded-full text-sm font-semibold">
-            Food Guide
-          </div>
+      <article class="card card-hover scroll-reveal">
+        <div class="aspect-[4/3] img-placeholder image-hover-scale relative">
+          <span class="absolute top-4 left-4 badge badge-green">Food Guide</span>
         </div>
-        <div class="p-6">
-          <h3 class="text-2xl font-bold text-sand-brown mb-3">
-            Barcelona Food Tour
+        <div class="p-8">
+          <h3 class="text-2xl font-outfit font-semibold text-charcoal mb-3 hover:text-primary-blue transition-colors">
+            <a href="/guides/barcelona-food">Barcelona Food Tour</a>
           </h3>
-          <p class="text-sand-brown mb-4 leading-relaxed">
+          <p class="text-slate mb-6 leading-relaxed">
             The ultimate guide to Barcelona's food scene - from authentic tapas bars
             to local markets and the best vermouth spots.
           </p>
           <div class="flex items-center justify-between">
-            <a href="/guides/barcelona-food" class="text-sand-tan font-semibold hover:underline">
-              Read Full Guide →
+            <span class="text-sm text-slate-light">7 min read</span>
+            <a href="/guides/barcelona-food" class="text-primary-blue font-medium hover:underline text-sm inline-flex items-center gap-1">
+              Read More
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
             </a>
-            <span class="text-sm text-sand-brown opacity-75">7 min read</span>
           </div>
         </div>
       </article>
 
       <!-- Guide Card 3 -->
-      <article class="card overflow-hidden scroll-reveal image-zoom">
-        <div class="h-56 bg-gradient-to-br from-sand-tan to-sand-brown relative">
-          <div class="w-full h-full flex items-center justify-center text-white">
-            <span class="text-lg">Guide Photo</span>
-          </div>
-          <div class="absolute top-4 right-4 bg-white text-sand-brown px-3 py-1 rounded-full text-sm font-semibold">
-            Budget Tips
-          </div>
+      <article class="card card-hover scroll-reveal">
+        <div class="aspect-[4/3] img-placeholder image-hover-scale relative">
+          <span class="absolute top-4 left-4 badge badge-blue">Budget Tips</span>
         </div>
-        <div class="p-6">
-          <h3 class="text-2xl font-bold text-sand-brown mb-3">
-            Europe on a Budget
+        <div class="p-8">
+          <h3 class="text-2xl font-outfit font-semibold text-charcoal mb-3 hover:text-primary-blue transition-colors">
+            <a href="/guides/europe-budget">Europe on a Budget</a>
           </h3>
-          <p class="text-sand-brown mb-4 leading-relaxed">
+          <p class="text-slate mb-6 leading-relaxed">
             My best tips for traveling through Europe without breaking the bank.
             Accommodation, transportation, and food hacks included!
           </p>
           <div class="flex items-center justify-between">
-            <a href="/guides/europe-budget" class="text-sand-tan font-semibold hover:underline">
-              Read Full Guide →
+            <span class="text-sm text-slate-light">8 min read</span>
+            <a href="/guides/europe-budget" class="text-primary-blue font-medium hover:underline text-sm inline-flex items-center gap-1">
+              Read More
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
             </a>
-            <span class="text-sm text-sand-brown opacity-75">8 min read</span>
           </div>
         </div>
       </article>
 
       <!-- Guide Card 4 -->
-      <article class="card overflow-hidden scroll-reveal image-zoom">
-        <div class="h-56 bg-gradient-to-br from-sand-soft to-sand-tan relative">
-          <div class="w-full h-full flex items-center justify-center text-white">
-            <span class="text-lg">Guide Photo</span>
-          </div>
-          <div class="absolute top-4 right-4 bg-white text-sand-brown px-3 py-1 rounded-full text-sm font-semibold">
-            Weekend Trip
-          </div>
+      <article class="card card-hover scroll-reveal">
+        <div class="aspect-[4/3] img-placeholder image-hover-scale relative">
+          <span class="absolute top-4 left-4 badge badge-green">Weekend Trip</span>
         </div>
-        <div class="p-6">
-          <h3 class="text-2xl font-bold text-sand-brown mb-3">
-            48 Hours in Paris
+        <div class="p-8">
+          <h3 class="text-2xl font-outfit font-semibold text-charcoal mb-3 hover:text-primary-blue transition-colors">
+            <a href="/guides/paris-48h">48 Hours in Paris</a>
           </h3>
-          <p class="text-sand-brown mb-4 leading-relaxed">
+          <p class="text-slate mb-6 leading-relaxed">
             Make the most of a weekend in Paris with this action-packed itinerary
             covering iconic landmarks and hidden local spots.
           </p>
           <div class="flex items-center justify-between">
-            <a href="/guides/paris-48h" class="text-sand-tan font-semibold hover:underline">
-              Read Full Guide →
+            <span class="text-sm text-slate-light">6 min read</span>
+            <a href="/guides/paris-48h" class="text-primary-blue font-medium hover:underline text-sm inline-flex items-center gap-1">
+              Read More
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
             </a>
-            <span class="text-sm text-sand-brown opacity-75">6 min read</span>
           </div>
         </div>
       </article>
 
       <!-- Guide Card 5 -->
-      <article class="card overflow-hidden scroll-reveal image-zoom">
-        <div class="h-56 bg-gradient-to-br from-sand-light to-sand-soft relative">
-          <div class="w-full h-full flex items-center justify-center text-sand-brown">
-            <span class="text-lg">Guide Photo</span>
-          </div>
-          <div class="absolute top-4 right-4 bg-white text-sand-brown px-3 py-1 rounded-full text-sm font-semibold">
-            Photography
-          </div>
+      <article class="card card-hover scroll-reveal">
+        <div class="aspect-[4/3] img-placeholder image-hover-scale relative">
+          <span class="absolute top-4 left-4 badge badge-blue">Photography</span>
         </div>
-        <div class="p-6">
-          <h3 class="text-2xl font-bold text-sand-brown mb-3">
-            Instagram Spots in Santorini
+        <div class="p-8">
+          <h3 class="text-2xl font-outfit font-semibold text-charcoal mb-3 hover:text-primary-blue transition-colors">
+            <a href="/guides/santorini-photos">Instagram Spots in Santorini</a>
           </h3>
-          <p class="text-sand-brown mb-4 leading-relaxed">
+          <p class="text-slate mb-6 leading-relaxed">
             The most photogenic locations in Santorini, including the best times
             to visit and how to avoid the crowds.
           </p>
           <div class="flex items-center justify-between">
-            <a href="/guides/santorini-photos" class="text-sand-tan font-semibold hover:underline">
-              Read Full Guide →
+            <span class="text-sm text-slate-light">4 min read</span>
+            <a href="/guides/santorini-photos" class="text-primary-blue font-medium hover:underline text-sm inline-flex items-center gap-1">
+              Read More
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
             </a>
-            <span class="text-sm text-sand-brown opacity-75">4 min read</span>
           </div>
         </div>
       </article>
 
       <!-- Guide Card 6 -->
-      <article class="card overflow-hidden scroll-reveal image-zoom">
-        <div class="h-56 bg-gradient-to-br from-sand-tan to-sand-soft relative">
-          <div class="w-full h-full flex items-center justify-center text-white">
-            <span class="text-lg">Guide Photo</span>
-          </div>
-          <div class="absolute top-4 right-4 bg-white text-sand-brown px-3 py-1 rounded-full text-sm font-semibold">
-            Packing Tips
-          </div>
+      <article class="card card-hover scroll-reveal">
+        <div class="aspect-[4/3] img-placeholder image-hover-scale relative">
+          <span class="absolute top-4 left-4 badge badge-green">Packing Tips</span>
         </div>
-        <div class="p-6">
-          <h3 class="text-2xl font-bold text-sand-brown mb-3">
-            Ultimate Packing List
+        <div class="p-8">
+          <h3 class="text-2xl font-outfit font-semibold text-charcoal mb-3 hover:text-primary-blue transition-colors">
+            <a href="/guides/packing-list">Ultimate Packing List</a>
           </h3>
-          <p class="text-sand-brown mb-4 leading-relaxed">
+          <p class="text-slate mb-6 leading-relaxed">
             Everything you need (and nothing you don't) for stress-free travel.
             My go-to items and organization tips.
           </p>
           <div class="flex items-center justify-between">
-            <a href="/guides/packing-list" class="text-sand-tan font-semibold hover:underline">
-              Read Full Guide →
+            <span class="text-sm text-slate-light">5 min read</span>
+            <a href="/guides/packing-list" class="text-primary-blue font-medium hover:underline text-sm inline-flex items-center gap-1">
+              Read More
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
             </a>
-            <span class="text-sm text-sand-brown opacity-75">5 min read</span>
           </div>
         </div>
       </article>
@@ -207,46 +204,74 @@
   </div>
 </section>
 
-<!-- Newsletter Section -->
-<section class="py-20 bg-sand-white">
-  <div class="container mx-auto px-6">
-    <div class="max-w-2xl mx-auto text-center scroll-reveal">
-      <h2 class="text-3xl font-bold text-sand-brown mb-4">
-        Get New Guides in Your Inbox
-      </h2>
-      <p class="text-lg text-sand-brown mb-8">
-        Be the first to know when I publish a new travel guide. No spam, just good travel content!
-      </p>
-      <form class="flex flex-col sm:flex-row gap-4 justify-center">
-        <input
-          type="email"
-          placeholder="Your email address"
-          class="px-6 py-3 rounded-lg border-2 border-sand-soft focus:border-sand-tan focus:outline-none flex-1 max-w-md"
-          required
-        >
-        <button type="submit" class="btn-primary whitespace-nowrap">
-          Subscribe
-        </button>
-      </form>
-      <p class="text-sm text-sand-brown opacity-75 mt-4">
-        I respect your privacy. Unsubscribe at any time.
-      </p>
+<!-- Newsletter CTA -->
+<section class="section-padding bg-pure-white">
+  <div class="container-custom">
+    <div class="card shadow-strong p-12 lg:p-16 text-center max-w-4xl mx-auto scroll-reveal">
+      <div class="max-w-2xl mx-auto">
+        <div class="w-16 h-16 bg-blue-subtle rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg class="w-8 h-8 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+        </div>
+
+        <h2 class="text-3xl md:text-4xl font-outfit font-bold text-charcoal mb-4">
+          Get New Guides First
+        </h2>
+
+        <p class="text-lg text-slate mb-8 leading-relaxed">
+          Join the community and be the first to receive new travel guides, tips, and destination inspiration.
+        </p>
+
+        <form class="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
+          <input
+            type="email"
+            placeholder="your@email.com"
+            class="flex-1 px-6 py-4 rounded-lg border-2 border-border-gray focus:border-primary-blue focus:outline-none text-sm"
+            required
+          >
+          <button type="submit" class="btn-primary whitespace-nowrap">
+            Subscribe
+          </button>
+        </form>
+
+        <p class="text-sm text-slate-light mt-4">
+          No spam, ever. Unsubscribe anytime.
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Call to Action -->
-<section class="py-16 bg-sand-tan text-white">
-  <div class="container mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-4 scroll-reveal">
-      See Where I've Been
-    </h2>
-    <p class="text-lg mb-6 scroll-reveal">
-      Explore my interactive world map with all my travel destinations.
-    </p>
-    <a href="/maps" class="btn-primary bg-white text-sand-tan hover:bg-opacity-90 inline-block scroll-reveal">
-      View My Map
-    </a>
+<!-- Map CTA Section -->
+<section class="section-padding bg-gradient-to-br from-forest-green to-green-dark text-pure-white relative overflow-hidden">
+  <!-- Pattern Overlay -->
+  <div class="absolute inset-0 opacity-10 grid-pattern"></div>
+
+  <div class="container-custom relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="scroll-reveal">
+        <span class="text-sm font-semibold text-green-subtle uppercase tracking-wider">Interactive Map</span>
+        <h2 class="text-4xl md:text-5xl font-outfit font-bold mt-4 mb-6 leading-tight">
+          See Where These Stories Come From
+        </h2>
+        <p class="text-xl text-pure-white/90 mb-8 leading-relaxed">
+          Explore my interactive world map to see all the destinations I've visited,
+          with links to guides and travel tips.
+        </p>
+        <a href="/maps" class="btn-primary bg-pure-white text-forest-green hover:bg-off-white">
+          Explore the Map
+        </a>
+      </div>
+
+      <div class="scroll-reveal">
+        <div class="rounded-2xl overflow-hidden shadow-strong aspect-square bg-pure-white/10 backdrop-blur-sm flex items-center justify-center">
+          <svg class="w-24 h-24 text-pure-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 

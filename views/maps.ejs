@@ -1,175 +1,288 @@
 <%- include('partials/header') %>
 
-<!-- Maps Hero Section -->
-<section class="bg-sand-tan text-white py-20">
-  <div class="container mx-auto px-6 text-center">
-    <h1 class="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
-      My Pinpoints
-    </h1>
-    <p class="text-xl md:text-2xl font-light max-w-3xl mx-auto animate-slide-up">
-      Every pin tells a story. Explore the places I've visited and get inspired for your next adventure.
-    </p>
-  </div>
-</section>
+<!-- Hero Section -->
+<section class="relative bg-gradient-to-br from-forest-green via-primary-blue to-blue-dark text-pure-white pt-32 pb-20 overflow-hidden">
+  <!-- Pattern Overlay -->
+  <div class="absolute inset-0 opacity-10 grid-pattern"></div>
 
-<!-- Map Instructions Section -->
-<section class="py-12 bg-sand-white">
-  <div class="container mx-auto px-6">
-    <div class="max-w-4xl mx-auto text-center scroll-reveal">
-      <h2 class="text-3xl font-bold text-sand-brown mb-4">
-        How to Use the Map
-      </h2>
-      <p class="text-lg text-sand-brown leading-relaxed">
-        Click on any pin to see the location details and photos. Each marker represents a destination
-        I've explored and shared. Some pins might link directly to detailed guides!
+  <div class="container-custom relative z-10">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="badge bg-pure-white/20 text-pure-white border border-pure-white/30 mb-6">
+        Interactive Travel Map
+      </span>
+
+      <h1 class="text-5xl md:text-7xl font-outfit font-bold mb-6 leading-tight animate-fade-in">
+        My Destinations
+      </h1>
+
+      <p class="text-xl md:text-2xl text-pure-white/90 max-w-2xl mx-auto animate-slide-up">
+        Every pin tells a story. Explore the destinations I've visited and get inspired for your next adventure.
       </p>
     </div>
   </div>
 </section>
 
-<!-- Interactive Map Section -->
-<section class="py-12 bg-sand-light">
-  <div class="container mx-auto px-6">
-    <div class="max-w-7xl mx-auto">
-      <div class="bg-sand-white rounded-lg shadow-xl overflow-hidden scroll-reveal">
-        <!-- Google Maps Embed -->
-        <div class="map-container" style="position: relative; padding-bottom: 60%; height: 0; overflow: hidden;">
-          <!--
-            INSTRUCTIONS TO SET UP GOOGLE MAPS:
-            1. Go to https://www.google.com/mymaps
-            2. Create a new map or open an existing one
-            3. Add pins to your desired locations with titles and descriptions
-            4. Click on "Share" and make the map public
-            5. Get the embed code (click the three dots menu > "Embed on my site")
-            6. Replace the iframe below with your embed code
-          -->
-
-          <!-- Placeholder Map - Replace with actual Google My Maps embed -->
-          <iframe
-            src="https://www.google.com/maps/d/embed?mid=YOUR_MAP_ID_HERE&ehbc=2E312F"
-            width="100%"
-            height="100%"
-            style="position: absolute; top: 0; left: 0; border: 0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Laura's Travel Map">
-          </iframe>
-
-          <!-- Fallback content if map doesn't load -->
-          <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #EADDCA 0%, #D2B48C 100%); pointer-events: none;">
-            <div class="text-center p-8">
-              <svg class="w-20 h-20 mx-auto mb-4 text-sand-brown" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-              </svg>
-              <h3 class="text-2xl font-bold text-sand-brown mb-2">Interactive Map Coming Soon</h3>
-              <p class="text-sand-brown">Replace this placeholder with your Google My Maps embed code</p>
-            </div>
-          </div>
-        </div>
+<!-- Stats Section -->
+<section class="section-padding bg-pure-white">
+  <div class="container-custom">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+      <div class="card text-center p-8 scroll-reveal">
+        <div class="text-5xl lg:text-6xl font-outfit font-bold gradient-text mb-3">25+</div>
+        <div class="text-slate text-sm uppercase tracking-wider">Countries Explored</div>
       </div>
+      <div class="card text-center p-8 scroll-reveal">
+        <div class="text-5xl lg:text-6xl font-outfit font-bold gradient-text mb-3">100+</div>
+        <div class="text-slate text-sm uppercase tracking-wider">Cities Visited</div>
+      </div>
+      <div class="card text-center p-8 scroll-reveal">
+        <div class="text-5xl lg:text-6xl font-outfit font-bold gradient-text mb-3">3</div>
+        <div class="text-slate text-sm uppercase tracking-wider">Continents</div>
+      </div>
+      <div class="card text-center p-8 scroll-reveal">
+        <div class="text-5xl lg:text-6xl font-outfit font-bold gradient-text mb-3">∞</div>
+        <div class="text-slate text-sm uppercase tracking-wider">Memories Made</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <!-- Map Stats -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-        <div class="bg-sand-white rounded-lg shadow-md p-6 text-center scroll-reveal">
-          <div class="text-4xl font-bold text-sand-tan mb-2">15+</div>
-          <div class="text-sand-brown">Countries</div>
-        </div>
-        <div class="bg-sand-white rounded-lg shadow-md p-6 text-center scroll-reveal">
-          <div class="text-4xl font-bold text-sand-tan mb-2">50+</div>
-          <div class="text-sand-brown">Cities</div>
-        </div>
-        <div class="bg-sand-white rounded-lg shadow-md p-6 text-center scroll-reveal">
-          <div class="text-4xl font-bold text-sand-tan mb-2">3</div>
-          <div class="text-sand-brown">Continents</div>
-        </div>
-        <div class="bg-sand-white rounded-lg shadow-md p-6 text-center scroll-reveal">
-          <div class="text-4xl font-bold text-sand-tan mb-2">∞</div>
-          <div class="text-sand-brown">Memories</div>
+<!-- Interactive Map Section -->
+<section class="section-padding bg-broken-white">
+  <div class="container-custom">
+    <!-- Section Header -->
+    <div class="text-center mb-12 scroll-reveal">
+      <h2 class="text-4xl md:text-5xl font-outfit font-bold text-charcoal mb-6">
+        Explore the Map
+      </h2>
+      <p class="text-lg text-slate max-w-2xl mx-auto">
+        Click on any pin to see location details, photos, and links to my detailed guides.
+      </p>
+    </div>
+
+    <!-- Map Container -->
+    <div class="card shadow-strong scroll-reveal">
+      <div class="relative" style="padding-bottom: 60%; height: 0;">
+        <!-- Google Maps Embed -->
+        <!--
+          SETUP INSTRUCTIONS:
+          1. Visit https://www.google.com/mymaps
+          2. Create your custom map with pins
+          3. Add titles, descriptions, and photos to each pin
+          4. Make the map public (Share > Get link > Anyone with link)
+          5. Get embed code (Menu > Embed on my site)
+          6. Replace the iframe below with your embed code
+        -->
+
+        <iframe
+          src="https://www.google.com/maps/d/embed?mid=YOUR_MAP_ID_HERE&ehbc=2E312F"
+          width="100%"
+          height="100%"
+          style="position: absolute; top: 0; left: 0; border: 0; border-radius: 1rem;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Laura's Travel Destinations">
+        </iframe>
+
+        <!-- Fallback Placeholder -->
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-center; border-radius: 1rem;" class="img-placeholder">
+          <div class="text-center p-8">
+            <svg class="w-20 h-20 mx-auto mb-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+            <h3 class="text-2xl font-outfit font-bold text-charcoal mb-3">Interactive Map</h3>
+            <p class="text-slate max-w-md mx-auto">
+              Add your Google My Maps embed code to display your travel destinations here.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Featured Destinations -->
-<section class="py-20 bg-sand-white">
-  <div class="container mx-auto px-6">
-    <h2 class="text-4xl font-bold text-sand-brown text-center mb-12 scroll-reveal">
-      Featured Destinations
-    </h2>
+<!-- Featured Destinations Section -->
+<section class="section-padding bg-pure-white">
+  <div class="container-custom">
+    <!-- Section Header -->
+    <div class="text-center mb-16 scroll-reveal">
+      <span class="text-sm font-semibold text-forest-green uppercase tracking-wider">Highlights</span>
+      <h2 class="text-4xl md:text-5xl font-outfit font-bold text-charcoal mt-4 mb-6">
+        Featured Destinations
+      </h2>
+      <p class="text-lg text-slate max-w-2xl mx-auto">
+        Some of my favorite places from around the world
+      </p>
+    </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <!-- Destinations Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
       <!-- Destination Card 1 -->
-      <div class="card overflow-hidden scroll-reveal image-zoom">
-        <div class="h-48 bg-gradient-to-br from-sand-tan to-sand-soft">
-          <div class="w-full h-full flex items-center justify-center text-sand-brown">
-            <span>Destination Photo</span>
-          </div>
+      <article class="card card-hover scroll-reveal">
+        <div class="aspect-[4/3] img-placeholder image-hover-scale">
         </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-sand-brown mb-2">Lisbon, Portugal</h3>
-          <p class="text-sand-brown text-sm mb-3">
+        <div class="p-8">
+          <div class="flex items-center gap-2 mb-3">
+            <svg class="w-5 h-5 text-forest-green" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm font-medium text-slate">Portugal</span>
+          </div>
+          <h3 class="text-2xl font-outfit font-semibold text-charcoal mb-3">
+            Lisbon
+          </h3>
+          <p class="text-slate mb-6 leading-relaxed">
             Charming hills, colorful tiles, and the best pastéis de nata you'll ever taste.
           </p>
-          <a href="/guides/lisbon" class="text-sand-tan font-semibold text-sm hover:underline">
-            Read Guide →
+          <a href="/guides/lisbon" class="text-primary-blue font-medium hover:underline inline-flex items-center gap-2">
+            Read Guide
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
           </a>
         </div>
-      </div>
+      </article>
 
       <!-- Destination Card 2 -->
-      <div class="card overflow-hidden scroll-reveal image-zoom">
-        <div class="h-48 bg-gradient-to-br from-sand-soft to-sand-light">
-          <div class="w-full h-full flex items-center justify-center text-sand-brown">
-            <span>Destination Photo</span>
-          </div>
+      <article class="card card-hover scroll-reveal">
+        <div class="aspect-[4/3] img-placeholder image-hover-scale">
         </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-sand-brown mb-2">Barcelona, Spain</h3>
-          <p class="text-sand-brown text-sm mb-3">
+        <div class="p-8">
+          <div class="flex items-center gap-2 mb-3">
+            <svg class="w-5 h-5 text-forest-green" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm font-medium text-slate">Spain</span>
+          </div>
+          <h3 class="text-2xl font-outfit font-semibold text-charcoal mb-3">
+            Barcelona
+          </h3>
+          <p class="text-slate mb-6 leading-relaxed">
             Gaudí's masterpieces, beach vibes, and tapas that will change your life.
           </p>
-          <a href="/guides/barcelona" class="text-sand-tan font-semibold text-sm hover:underline">
-            Read Guide →
+          <a href="/guides/barcelona-food" class="text-primary-blue font-medium hover:underline inline-flex items-center gap-2">
+            Read Guide
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
           </a>
         </div>
-      </div>
+      </article>
 
       <!-- Destination Card 3 -->
-      <div class="card overflow-hidden scroll-reveal image-zoom">
-        <div class="h-48 bg-gradient-to-br from-sand-tan to-sand-soft">
-          <div class="w-full h-full flex items-center justify-center text-sand-brown">
-            <span>Destination Photo</span>
-          </div>
+      <article class="card card-hover scroll-reveal">
+        <div class="aspect-[4/3] img-placeholder image-hover-scale">
         </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-sand-brown mb-2">Paris, France</h3>
-          <p class="text-sand-brown text-sm mb-3">
+        <div class="p-8">
+          <div class="flex items-center gap-2 mb-3">
+            <svg class="w-5 h-5 text-forest-green" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm font-medium text-slate">France</span>
+          </div>
+          <h3 class="text-2xl font-outfit font-semibold text-charcoal mb-3">
+            Paris
+          </h3>
+          <p class="text-slate mb-6 leading-relaxed">
             Romance, croissants, and hidden gems beyond the Eiffel Tower.
           </p>
-          <a href="/guides/paris" class="text-sand-tan font-semibold text-sm hover:underline">
-            Read Guide →
+          <a href="/guides/paris-48h" class="text-primary-blue font-medium hover:underline inline-flex items-center gap-2">
+            Read Guide
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
           </a>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </article>
 
-<!-- Call to Action -->
-<section class="py-16 bg-sand-tan text-white">
-  <div class="container mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-4 scroll-reveal">
-      Want to See More?
-    </h2>
-    <p class="text-lg mb-6 scroll-reveal">
-      Check out my detailed travel guides for tips, itineraries, and insider recommendations.
-    </p>
-    <a href="/guides" class="btn-primary bg-white text-sand-tan hover:bg-opacity-90 inline-block scroll-reveal">
-      Browse My Guides
-    </a>
+      <!-- Destination Card 4 -->
+      <article class="card card-hover scroll-reveal">
+        <div class="aspect-[4/3] img-placeholder image-hover-scale">
+        </div>
+        <div class="p-8">
+          <div class="flex items-center gap-2 mb-3">
+            <svg class="w-5 h-5 text-forest-green" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm font-medium text-slate">Italy</span>
+          </div>
+          <h3 class="text-2xl font-outfit font-semibold text-charcoal mb-3">
+            Rome
+          </h3>
+          <p class="text-slate mb-6 leading-relaxed">
+            Ancient history, incredible food, and la dolce vita at every corner.
+          </p>
+          <a href="/guides" class="text-primary-blue font-medium hover:underline inline-flex items-center gap-2">
+            Read Guide
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Destination Card 5 -->
+      <article class="card card-hover scroll-reveal">
+        <div class="aspect-[4/3] img-placeholder image-hover-scale">
+        </div>
+        <div class="p-8">
+          <div class="flex items-center gap-2 mb-3">
+            <svg class="w-5 h-5 text-forest-green" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm font-medium text-slate">Greece</span>
+          </div>
+          <h3 class="text-2xl font-outfit font-semibold text-charcoal mb-3">
+            Santorini
+          </h3>
+          <p class="text-slate mb-6 leading-relaxed">
+            Stunning sunsets, white-washed buildings, and crystal blue waters.
+          </p>
+          <a href="/guides/santorini-photos" class="text-primary-blue font-medium hover:underline inline-flex items-center gap-2">
+            Read Guide
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Destination Card 6 -->
+      <article class="card card-hover scroll-reveal">
+        <div class="aspect-[4/3] img-placeholder image-hover-scale">
+        </div>
+        <div class="p-8">
+          <div class="flex items-center gap-2 mb-3">
+            <svg class="w-5 h-5 text-forest-green" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-sm font-medium text-slate">Netherlands</span>
+          </div>
+          <h3 class="text-2xl font-outfit font-semibold text-charcoal mb-3">
+            Amsterdam
+          </h3>
+          <p class="text-slate mb-6 leading-relaxed">
+            Canals, cycling culture, and some of Europe's best museums.
+          </p>
+          <a href="/guides" class="text-primary-blue font-medium hover:underline inline-flex items-center gap-2">
+            Read Guide
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-16 scroll-reveal">
+      <a href="/guides" class="btn-secondary">
+        Browse All Travel Guides
+      </a>
+    </div>
   </div>
 </section>
 

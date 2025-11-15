@@ -3,67 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Journeys by Laura - Travel stories, guides, and adventures from around the world">
+  <meta name="description" content="Journeys by Laura - Curated travel experiences and authentic stories from around the world">
   <title><%= title %></title>
   <link rel="stylesheet" href="/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
-<body class="font-montserrat">
+<body class="font-inter">
   <!-- Loading Animation -->
-  <div id="loader" class="fixed inset-0 bg-sand-light flex items-center justify-center z-50 transition-opacity duration-500">
+  <div id="loader" class="fixed inset-0 bg-broken-white flex items-center justify-center z-50 transition-opacity duration-500">
     <div class="loader"></div>
   </div>
 
-  <!-- Navigation -->
-  <nav class="bg-sand-white shadow-md sticky top-0 z-40 transition-all duration-300">
-    <div class="container mx-auto px-6 py-4">
-      <div class="flex items-center justify-between">
-        <!-- Logo/Brand -->
-        <a href="/" class="text-2xl font-bold text-sand-brown hover:text-sand-tan transition-colors duration-300">
-          Journeys by Laura
+  <!-- Navigation - Minimal & Clean -->
+  <nav class="fixed top-0 left-0 right-0 z-40 transition-all duration-300" id="navbar">
+    <div class="container-custom">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Logo -->
+        <a href="/" class="text-xl font-outfit font-bold text-charcoal hover:text-primary-blue transition-colors duration-300">
+          Laura
         </a>
 
         <!-- Desktop Navigation -->
-        <div class="hidden md:flex items-center space-x-8">
+        <div class="hidden md:flex items-center gap-12">
           <a href="/" class="nav-link <%= currentPage === 'home' ? 'active' : '' %>">
             Home
           </a>
           <a href="/maps" class="nav-link <%= currentPage === 'maps' ? 'active' : '' %>">
-            My Pinpoints
+            Destinations
           </a>
           <a href="/guides" class="nav-link <%= currentPage === 'guides' ? 'active' : '' %>">
-            My Guides
+            Guides
           </a>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="hidden md:block">
           <a href="https://www.tiktok.com/@yourhandle" target="_blank" rel="noopener noreferrer"
-             class="btn-primary">
-            Follow on TikTok
+             class="btn-primary text-xs">
+            Follow Journey
           </a>
         </div>
 
         <!-- Mobile Menu Button -->
-        <button id="mobile-menu-btn" class="md:hidden text-sand-brown focus:outline-none">
+        <button id="mobile-menu-btn" class="md:hidden text-charcoal focus:outline-none">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
       </div>
+    </div>
 
-      <!-- Mobile Navigation -->
-      <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
-        <div class="flex flex-col space-y-4">
-          <a href="/" class="text-sand-brown hover:text-sand-tan transition-colors duration-300 <%= currentPage === 'home' ? 'font-bold' : '' %>">
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="hidden md:hidden glass-effect border-t border-border-gray">
+      <div class="container-custom py-6">
+        <div class="flex flex-col gap-6">
+          <a href="/" class="text-base font-medium text-charcoal hover:text-primary-blue transition-colors <%= currentPage === 'home' ? 'text-primary-blue' : '' %>">
             Home
           </a>
-          <a href="/maps" class="text-sand-brown hover:text-sand-tan transition-colors duration-300 <%= currentPage === 'maps' ? 'font-bold' : '' %>">
-            My Pinpoints
+          <a href="/maps" class="text-base font-medium text-charcoal hover:text-primary-blue transition-colors <%= currentPage === 'maps' ? 'text-primary-blue' : '' %>">
+            Destinations
           </a>
-          <a href="/guides" class="text-sand-brown hover:text-sand-tan transition-colors duration-300 <%= currentPage === 'guides' ? 'font-bold' : '' %>">
-            My Guides
+          <a href="/guides" class="text-base font-medium text-charcoal hover:text-primary-blue transition-colors <%= currentPage === 'guides' ? 'text-primary-blue' : '' %>">
+            Guides
           </a>
           <a href="https://www.tiktok.com/@yourhandle" target="_blank" rel="noopener noreferrer"
              class="btn-primary inline-block text-center">
-            Follow on TikTok
+            Follow Journey
           </a>
         </div>
       </div>

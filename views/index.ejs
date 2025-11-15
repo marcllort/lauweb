@@ -1,167 +1,318 @@
 <%- include('partials/header') %>
 
-<!-- Hero Section -->
-<section class="relative h-screen flex items-center justify-center overflow-hidden">
-  <!-- Background Image/Video Placeholder -->
-  <div class="absolute inset-0 bg-gradient-to-br from-sand-soft to-sand-tan">
-    <!-- Replace this div with actual hero image or video -->
-    <!-- Example: <img src="/assets/images/hero-bg.jpg" alt="Hero" class="w-full h-full object-cover"> -->
-    <!-- Or video: <video autoplay muted loop class="w-full h-full object-cover"><source src="/assets/videos/hero.mp4" type="video/mp4"></video> -->
-  </div>
+<!-- Hero Section - Modern & Sophisticated -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+  <!-- Background with Gradient -->
+  <div class="absolute inset-0 bg-gradient-to-br from-blue-dark via-primary-blue to-forest-green"></div>
 
-  <!-- Overlay -->
-  <div class="absolute inset-0 hero-overlay"></div>
+  <!-- Animated Background Pattern -->
+  <div class="absolute inset-0 opacity-10 grid-pattern"></div>
 
-  <!-- Hero Content -->
-  <div class="relative z-10 text-center text-white px-6">
-    <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-      Journeys by Laura
-    </h1>
-    <p class="text-xl md:text-2xl mb-8 font-light animate-slide-up">
-      Exploring the world, one adventure at a time
-    </p>
-    <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
-      <a href="/guides" class="btn-primary">
-        Explore My Guides
-      </a>
-      <a href="/maps" class="btn-secondary bg-white bg-opacity-20 border-white text-white hover:bg-white hover:text-sand-brown">
-        View My Map
-      </a>
+  <!-- Content -->
+  <div class="relative z-10 container-custom py-20">
+    <div class="max-w-4xl mx-auto text-center">
+      <!-- Badge -->
+      <div class="mb-8 animate-fade-in">
+        <span class="badge badge-blue bg-pure-white/20 text-pure-white border border-pure-white/30">
+          Travel · Explore · Inspire
+        </span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-outfit font-bold text-pure-white mb-8 leading-tight animate-slide-up">
+        Journeys Worth<br>
+        Taking
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-xl md:text-2xl text-pure-white/90 mb-12 max-w-2xl mx-auto leading-relaxed animate-slide-up" style="animation-delay: 0.1s;">
+        Curated travel experiences, authentic stories, and practical guides
+        for the modern explorer.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style="animation-delay: 0.2s;">
+        <a href="/guides" class="btn-primary bg-pure-white text-primary-blue hover:bg-off-white hover:shadow-strong">
+          Explore Guides
+        </a>
+        <a href="/maps" class="btn-secondary border-pure-white text-pure-white hover:bg-pure-white hover:text-primary-blue">
+          View Destinations
+        </a>
+      </div>
     </div>
   </div>
 
   <!-- Scroll Indicator -->
-  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <svg class="w-6 h-6 text-pure-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
     </svg>
   </div>
 </section>
 
-<!-- Introduction Section -->
-<section class="py-20 bg-sand-white">
-  <div class="container mx-auto px-6">
-    <div class="max-w-3xl mx-auto text-center scroll-reveal">
-      <h2 class="text-4xl font-bold text-sand-brown mb-6">
-        Welcome to My Journey
-      </h2>
-      <p class="text-lg text-sand-brown leading-relaxed mb-8">
-        Hey there! I'm Laura, a passionate traveler sharing authentic stories and practical tips
-        from my adventures around the world. Whether you're looking for hidden gems, budget-friendly
-        tips, or just some travel inspiration, you're in the right place.
-      </p>
-      <div class="flex justify-center">
-        <img src="/assets/images/profile-placeholder.jpg" alt="Laura"
-             class="w-48 h-48 rounded-full object-cover shadow-lg"
-             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Ccircle cx=%22100%22 cy=%22100%22 r=%22100%22 fill=%22%23D2B48C%22/%3E%3Ctext x=%22100%22 y=%22110%22 font-size=%2260%22 text-anchor=%22middle%22 fill=%22white%22%3EL%3C/text%3E%3C/svg%3E'">
+<!-- Stats Section -->
+<section class="section-padding bg-pure-white">
+  <div class="container-custom">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="text-center scroll-reveal">
+        <div class="text-5xl font-outfit font-bold text-primary-blue mb-2">25+</div>
+        <div class="text-slate text-sm uppercase tracking-wider">Countries</div>
+      </div>
+      <div class="text-center scroll-reveal">
+        <div class="text-5xl font-outfit font-bold text-forest-green mb-2">100+</div>
+        <div class="text-slate text-sm uppercase tracking-wider">Cities</div>
+      </div>
+      <div class="text-center scroll-reveal">
+        <div class="text-5xl font-outfit font-bold text-primary-blue mb-2">50+</div>
+        <div class="text-slate text-sm uppercase tracking-wider">Guides</div>
+      </div>
+      <div class="text-center scroll-reveal">
+        <div class="text-5xl font-outfit font-bold text-forest-green mb-2">10K+</div>
+        <div class="text-slate text-sm uppercase tracking-wider">Followers</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TikTok Integration Section -->
-<section class="py-20 bg-sand-light">
-  <div class="container mx-auto px-6">
-    <div class="max-w-4xl mx-auto text-center scroll-reveal">
-      <h2 class="text-4xl font-bold text-sand-brown mb-6">
-        Follow My Adventures
-      </h2>
-      <p class="text-lg text-sand-brown mb-8">
-        Get daily travel content, behind-the-scenes moments, and quick tips on TikTok!
-      </p>
+<!-- About Section -->
+<section class="section-padding bg-off-white">
+  <div class="container-custom">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <!-- Image Side -->
+      <div class="scroll-reveal">
+        <div class="relative">
+          <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-strong">
+            <div class="w-full h-full img-placeholder">
+              <span class="text-lg">Your Photo Here</span>
+            </div>
+          </div>
+          <!-- Floating Badge -->
+          <div class="absolute -bottom-6 -right-6 bg-forest-green text-pure-white p-8 rounded-2xl shadow-strong">
+            <div class="text-4xl font-outfit font-bold">5+</div>
+            <div class="text-sm opacity-90">Years Traveling</div>
+          </div>
+        </div>
+      </div>
 
-      <!-- TikTok Embed Placeholder -->
-      <div class="bg-sand-white rounded-lg shadow-xl p-8 mb-8">
-        <div class="aspect-video bg-gradient-to-br from-sand-soft to-sand-tan rounded-lg flex items-center justify-center">
-          <!-- Replace with actual TikTok embed code -->
-          <div class="text-center">
-            <svg class="w-20 h-20 mx-auto mb-4 text-sand-brown" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+      <!-- Content Side -->
+      <div class="scroll-reveal">
+        <span class="text-sm font-semibold text-primary-blue uppercase tracking-wider">About Me</span>
+        <h2 class="text-4xl md:text-5xl font-outfit font-bold text-charcoal mt-4 mb-6 leading-tight">
+          Hi, I'm Laura
+        </h2>
+        <p class="text-lg text-slate leading-relaxed mb-6">
+          A passionate traveler sharing authentic stories and practical tips from my adventures around
+          the world. I believe travel should be accessible, meaningful, and unforgettable.
+        </p>
+        <p class="text-lg text-slate leading-relaxed mb-8">
+          Whether you're looking for hidden gems, budget-friendly tips, or just some wanderlust
+          inspiration, you've come to the right place.
+        </p>
+
+        <!-- Features -->
+        <div class="space-y-4 mb-8">
+          <div class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-forest-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
             </svg>
-            <p class="text-sand-brown">TikTok embed will appear here</p>
+            <span class="text-slate">Authentic travel experiences & honest recommendations</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-forest-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-slate">Budget-friendly tips for every destination</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-6 h-6 text-forest-green flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span class="text-slate">Hidden gems and off-the-beaten-path locations</span>
           </div>
         </div>
-      </div>
 
-      <a href="https://www.tiktok.com/@yourhandle" target="_blank" rel="noopener noreferrer"
-         class="btn-primary inline-block">
-        Follow @yourhandle on TikTok
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- Featured Content Section -->
-<section class="py-20 bg-sand-white">
-  <div class="container mx-auto px-6">
-    <h2 class="text-4xl font-bold text-sand-brown text-center mb-12 scroll-reveal">
-      Featured Content
-    </h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-      <!-- Featured Guide -->
-      <div class="card overflow-hidden scroll-reveal image-zoom">
-        <div class="h-64 bg-gradient-to-br from-sand-tan to-sand-soft">
-          <!-- Replace with actual image -->
-          <!-- <img src="/assets/images/featured-guide.jpg" alt="Featured Guide" class="w-full h-full object-cover"> -->
-          <div class="w-full h-full flex items-center justify-center text-sand-brown">
-            <span class="text-lg">Featured Guide Image</span>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-2xl font-bold text-sand-brown mb-3">
-            Ultimate Guide to Lisbon
-          </h3>
-          <p class="text-sand-brown mb-4">
-            Discover the best cafes, viewpoints, and hidden gems in Portugal's stunning capital city.
-          </p>
-          <a href="/guides/lisbon" class="text-sand-tan font-semibold hover:underline">
-            Read the Guide →
-          </a>
-        </div>
-      </div>
-
-      <!-- Featured Map Location -->
-      <div class="card overflow-hidden scroll-reveal image-zoom">
-        <div class="h-64 bg-gradient-to-br from-sand-soft to-sand-light">
-          <!-- Replace with actual map screenshot or image -->
-          <div class="w-full h-full flex items-center justify-center text-sand-brown">
-            <span class="text-lg">Map Preview</span>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-2xl font-bold text-sand-brown mb-3">
-            My Travel Pinpoints
-          </h3>
-          <p class="text-sand-brown mb-4">
-            Explore all the amazing places I've been to on an interactive world map.
-          </p>
-          <a href="/maps" class="text-sand-tan font-semibold hover:underline">
-            View the Map →
-          </a>
-        </div>
+        <a href="/guides" class="btn-primary">
+          Read My Guides
+        </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Call to Action Section -->
-<section class="py-20 bg-sand-tan text-white">
-  <div class="container mx-auto px-6 text-center">
-    <h2 class="text-4xl font-bold mb-6 scroll-reveal">
-      Ready to Start Your Journey?
-    </h2>
-    <p class="text-xl mb-8 max-w-2xl mx-auto scroll-reveal">
-      Dive into my travel guides, explore my map, and get inspired for your next adventure!
-    </p>
-    <div class="flex flex-col sm:flex-row gap-4 justify-center scroll-reveal">
-      <a href="/guides" class="bg-white text-sand-tan px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300">
-        Browse All Guides
+<!-- Featured Guides Section -->
+<section class="section-padding bg-broken-white">
+  <div class="container-custom">
+    <!-- Section Header -->
+    <div class="text-center mb-16 scroll-reveal">
+      <span class="text-sm font-semibold text-primary-blue uppercase tracking-wider">Latest Guides</span>
+      <h2 class="text-4xl md:text-5xl font-outfit font-bold text-charcoal mt-4 mb-6">
+        Travel Inspiration
+      </h2>
+      <p class="text-lg text-slate max-w-2xl mx-auto">
+        Carefully crafted guides to help you plan your next adventure
+      </p>
+    </div>
+
+    <!-- Guides Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Guide Card 1 -->
+      <article class="card card-hover scroll-reveal">
+        <div class="aspect-[4/3] img-placeholder relative">
+          <span class="absolute top-4 left-4 badge badge-blue">City Guide</span>
+        </div>
+        <div class="p-8">
+          <h3 class="text-2xl font-outfit font-semibold text-charcoal mb-3 hover:text-primary-blue transition-colors">
+            <a href="/guides/lisbon">Ultimate Lisbon Guide</a>
+          </h3>
+          <p class="text-slate mb-6 leading-relaxed">
+            Discover the best viewpoints, tastiest pastéis de nata, and hidden neighborhoods in Portugal's capital.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="text-sm text-slate-light">5 min read</span>
+            <a href="/guides/lisbon" class="text-primary-blue font-medium hover:underline text-sm">
+              Read More →
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Guide Card 2 -->
+      <article class="card card-hover scroll-reveal">
+        <div class="aspect-[4/3] img-placeholder relative">
+          <span class="absolute top-4 left-4 badge badge-green">Food Guide</span>
+        </div>
+        <div class="p-8">
+          <h3 class="text-2xl font-outfit font-semibold text-charcoal mb-3 hover:text-primary-blue transition-colors">
+            <a href="/guides/barcelona-food">Barcelona Food Tour</a>
+          </h3>
+          <p class="text-slate mb-6 leading-relaxed">
+            The ultimate guide to Barcelona's food scene - from authentic tapas to local markets.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="text-sm text-slate-light">7 min read</span>
+            <a href="/guides/barcelona-food" class="text-primary-blue font-medium hover:underline text-sm">
+              Read More →
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Guide Card 3 -->
+      <article class="card card-hover scroll-reveal">
+        <div class="aspect-[4/3] img-placeholder relative">
+          <span class="absolute top-4 left-4 badge badge-blue">Budget Tips</span>
+        </div>
+        <div class="p-8">
+          <h3 class="text-2xl font-outfit font-semibold text-charcoal mb-3 hover:text-primary-blue transition-colors">
+            <a href="/guides/europe-budget">Europe on a Budget</a>
+          </h3>
+          <p class="text-slate mb-6 leading-relaxed">
+            Travel smart through Europe without breaking the bank. All my best money-saving tips.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="text-sm text-slate-light">8 min read</span>
+            <a href="/guides/europe-budget" class="text-primary-blue font-medium hover:underline text-sm">
+              Read More →
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- View All Button -->
+    <div class="text-center mt-12 scroll-reveal">
+      <a href="/guides" class="btn-secondary">
+        View All Guides
       </a>
-      <a href="https://www.tiktok.com/@yourhandle" target="_blank" rel="noopener noreferrer"
-         class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-sand-tan transition-all duration-300">
-        Follow on TikTok
-      </a>
+    </div>
+  </div>
+</section>
+
+<!-- TikTok CTA Section -->
+<section class="section-padding bg-gradient-to-br from-primary-blue to-forest-green text-pure-white relative overflow-hidden">
+  <!-- Pattern Overlay -->
+  <div class="absolute inset-0 opacity-10 grid-pattern"></div>
+
+  <div class="container-custom relative z-10">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="mb-8 scroll-reveal">
+        <svg class="w-16 h-16 mx-auto text-pure-white/80" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+        </svg>
+      </div>
+
+      <h2 class="text-4xl md:text-5xl font-outfit font-bold mb-6 scroll-reveal">
+        Follow My Journey
+      </h2>
+
+      <p class="text-xl text-pure-white/90 mb-10 leading-relaxed scroll-reveal">
+        Get daily travel content, behind-the-scenes moments, and quick tips on TikTok.
+        Join a community of explorers!
+      </p>
+
+      <div class="scroll-reveal">
+        <a href="https://www.tiktok.com/@yourhandle" target="_blank" rel="noopener noreferrer"
+           class="btn-primary bg-pure-white text-primary-blue hover:bg-off-white hover:shadow-strong">
+          Follow on TikTok
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Map Preview Section -->
+<section class="section-padding bg-pure-white">
+  <div class="container-custom">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <!-- Content Side -->
+      <div class="scroll-reveal">
+        <span class="text-sm font-semibold text-forest-green uppercase tracking-wider">Interactive Map</span>
+        <h2 class="text-4xl md:text-5xl font-outfit font-bold text-charcoal mt-4 mb-6 leading-tight">
+          Explore Where I've Been
+        </h2>
+        <p class="text-lg text-slate leading-relaxed mb-8">
+          Every pin tells a story. Browse my interactive world map to see all the destinations
+          I've explored, with photos, tips, and links to detailed guides.
+        </p>
+
+        <div class="space-y-4 mb-8">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-blue-subtle flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="font-semibold text-charcoal">25+ Countries Visited</div>
+              <div class="text-sm text-slate">Across 3 continents and counting</div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-green-subtle flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-forest-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+              </svg>
+            </div>
+            <div>
+              <div class="font-semibold text-charcoal">Detailed Travel Insights</div>
+              <div class="text-sm text-slate">Photos, tips & guide links for each location</div>
+            </div>
+          </div>
+        </div>
+
+        <a href="/maps" class="btn-green">
+          View Interactive Map
+        </a>
+      </div>
+
+      <!-- Map Preview Side -->
+      <div class="scroll-reveal">
+        <div class="rounded-2xl overflow-hidden shadow-strong aspect-square img-placeholder">
+          <span class="text-lg">Map Preview</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
