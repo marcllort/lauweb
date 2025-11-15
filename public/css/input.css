@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar styling */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base body styling */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F5F5DC;
+  color: #8C7B70;
+}
+
+/* Page transition animations */
+.page-transition {
+  animation: fadeIn 0.6s ease-in;
+}
+
+/* Scroll reveal animations */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Image hover effect */
+.image-zoom {
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-zoom img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-zoom:hover img {
+  transform: scale(1.05);
+}
+
+/* Button hover effects */
+.btn-primary {
+  @apply bg-sand-tan text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-opacity-90 hover:shadow-lg;
+}
+
+.btn-secondary {
+  @apply border-2 border-sand-tan text-sand-brown px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-sand-tan hover:text-white;
+}
+
+/* Card styling */
+.card {
+  @apply bg-sand-white rounded-lg shadow-md transition-all duration-300 hover:shadow-xl;
+}
+
+/* Loading animation */
+.loader {
+  border: 4px solid #EADDCA;
+  border-top: 4px solid #D2B48C;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Hero section overlay */
+.hero-overlay {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+}
+
+/* Navigation link styling */
+.nav-link {
+  @apply text-sand-brown font-medium transition-colors duration-300 hover:text-sand-tan;
+}
+
+.nav-link.active {
+  @apply text-sand-tan font-bold;
+}

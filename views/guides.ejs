@@ -1,0 +1,253 @@
+<%- include('partials/header') %>
+
+<!-- Guides Hero Section -->
+<section class="bg-sand-tan text-white py-20">
+  <div class="container mx-auto px-6 text-center">
+    <h1 class="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
+      My Guides
+    </h1>
+    <p class="text-xl md:text-2xl font-light max-w-3xl mx-auto animate-slide-up">
+      Practical tips, hidden gems, and authentic experiences from my travels.
+    </p>
+  </div>
+</section>
+
+<!-- Filter Section (Optional for future) -->
+<section class="py-8 bg-sand-white border-b border-sand-soft">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-wrap justify-center gap-4">
+      <button class="px-6 py-2 rounded-full bg-sand-tan text-white font-medium transition-all duration-300 hover:bg-opacity-90">
+        All Guides
+      </button>
+      <button class="px-6 py-2 rounded-full bg-sand-soft text-sand-brown font-medium transition-all duration-300 hover:bg-sand-tan hover:text-white">
+        Europe
+      </button>
+      <button class="px-6 py-2 rounded-full bg-sand-soft text-sand-brown font-medium transition-all duration-300 hover:bg-sand-tan hover:text-white">
+        City Guides
+      </button>
+      <button class="px-6 py-2 rounded-full bg-sand-soft text-sand-brown font-medium transition-all duration-300 hover:bg-sand-tan hover:text-white">
+        Budget Travel
+      </button>
+      <button class="px-6 py-2 rounded-full bg-sand-soft text-sand-brown font-medium transition-all duration-300 hover:bg-sand-tan hover:text-white">
+        Food & Drinks
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Guides Grid -->
+<section class="py-16 bg-sand-light">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+      <!-- Guide Card 1 -->
+      <article class="card overflow-hidden scroll-reveal image-zoom">
+        <div class="h-56 bg-gradient-to-br from-sand-tan to-sand-soft relative">
+          <!-- Replace with actual image: <img src="/assets/images/guides/lisbon.jpg" alt="Lisbon Guide" class="w-full h-full object-cover"> -->
+          <div class="w-full h-full flex items-center justify-center text-white">
+            <span class="text-lg">Guide Photo</span>
+          </div>
+          <div class="absolute top-4 right-4 bg-white text-sand-brown px-3 py-1 rounded-full text-sm font-semibold">
+            City Guide
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-sand-brown mb-3">
+            Ultimate Guide to Lisbon
+          </h3>
+          <p class="text-sand-brown mb-4 leading-relaxed">
+            Discover the best viewpoints, tastiest pastéis de nata, hidden neighborhoods,
+            and budget-friendly tips for exploring Portugal's capital.
+          </p>
+          <div class="flex items-center justify-between">
+            <a href="/guides/lisbon" class="text-sand-tan font-semibold hover:underline">
+              Read Full Guide →
+            </a>
+            <span class="text-sm text-sand-brown opacity-75">5 min read</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Guide Card 2 -->
+      <article class="card overflow-hidden scroll-reveal image-zoom">
+        <div class="h-56 bg-gradient-to-br from-sand-soft to-sand-light relative">
+          <div class="w-full h-full flex items-center justify-center text-sand-brown">
+            <span class="text-lg">Guide Photo</span>
+          </div>
+          <div class="absolute top-4 right-4 bg-white text-sand-brown px-3 py-1 rounded-full text-sm font-semibold">
+            Food Guide
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-sand-brown mb-3">
+            Barcelona Food Tour
+          </h3>
+          <p class="text-sand-brown mb-4 leading-relaxed">
+            The ultimate guide to Barcelona's food scene - from authentic tapas bars
+            to local markets and the best vermouth spots.
+          </p>
+          <div class="flex items-center justify-between">
+            <a href="/guides/barcelona-food" class="text-sand-tan font-semibold hover:underline">
+              Read Full Guide →
+            </a>
+            <span class="text-sm text-sand-brown opacity-75">7 min read</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Guide Card 3 -->
+      <article class="card overflow-hidden scroll-reveal image-zoom">
+        <div class="h-56 bg-gradient-to-br from-sand-tan to-sand-brown relative">
+          <div class="w-full h-full flex items-center justify-center text-white">
+            <span class="text-lg">Guide Photo</span>
+          </div>
+          <div class="absolute top-4 right-4 bg-white text-sand-brown px-3 py-1 rounded-full text-sm font-semibold">
+            Budget Tips
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-sand-brown mb-3">
+            Europe on a Budget
+          </h3>
+          <p class="text-sand-brown mb-4 leading-relaxed">
+            My best tips for traveling through Europe without breaking the bank.
+            Accommodation, transportation, and food hacks included!
+          </p>
+          <div class="flex items-center justify-between">
+            <a href="/guides/europe-budget" class="text-sand-tan font-semibold hover:underline">
+              Read Full Guide →
+            </a>
+            <span class="text-sm text-sand-brown opacity-75">8 min read</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Guide Card 4 -->
+      <article class="card overflow-hidden scroll-reveal image-zoom">
+        <div class="h-56 bg-gradient-to-br from-sand-soft to-sand-tan relative">
+          <div class="w-full h-full flex items-center justify-center text-white">
+            <span class="text-lg">Guide Photo</span>
+          </div>
+          <div class="absolute top-4 right-4 bg-white text-sand-brown px-3 py-1 rounded-full text-sm font-semibold">
+            Weekend Trip
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-sand-brown mb-3">
+            48 Hours in Paris
+          </h3>
+          <p class="text-sand-brown mb-4 leading-relaxed">
+            Make the most of a weekend in Paris with this action-packed itinerary
+            covering iconic landmarks and hidden local spots.
+          </p>
+          <div class="flex items-center justify-between">
+            <a href="/guides/paris-48h" class="text-sand-tan font-semibold hover:underline">
+              Read Full Guide →
+            </a>
+            <span class="text-sm text-sand-brown opacity-75">6 min read</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Guide Card 5 -->
+      <article class="card overflow-hidden scroll-reveal image-zoom">
+        <div class="h-56 bg-gradient-to-br from-sand-light to-sand-soft relative">
+          <div class="w-full h-full flex items-center justify-center text-sand-brown">
+            <span class="text-lg">Guide Photo</span>
+          </div>
+          <div class="absolute top-4 right-4 bg-white text-sand-brown px-3 py-1 rounded-full text-sm font-semibold">
+            Photography
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-sand-brown mb-3">
+            Instagram Spots in Santorini
+          </h3>
+          <p class="text-sand-brown mb-4 leading-relaxed">
+            The most photogenic locations in Santorini, including the best times
+            to visit and how to avoid the crowds.
+          </p>
+          <div class="flex items-center justify-between">
+            <a href="/guides/santorini-photos" class="text-sand-tan font-semibold hover:underline">
+              Read Full Guide →
+            </a>
+            <span class="text-sm text-sand-brown opacity-75">4 min read</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Guide Card 6 -->
+      <article class="card overflow-hidden scroll-reveal image-zoom">
+        <div class="h-56 bg-gradient-to-br from-sand-tan to-sand-soft relative">
+          <div class="w-full h-full flex items-center justify-center text-white">
+            <span class="text-lg">Guide Photo</span>
+          </div>
+          <div class="absolute top-4 right-4 bg-white text-sand-brown px-3 py-1 rounded-full text-sm font-semibold">
+            Packing Tips
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-sand-brown mb-3">
+            Ultimate Packing List
+          </h3>
+          <p class="text-sand-brown mb-4 leading-relaxed">
+            Everything you need (and nothing you don't) for stress-free travel.
+            My go-to items and organization tips.
+          </p>
+          <div class="flex items-center justify-between">
+            <a href="/guides/packing-list" class="text-sand-tan font-semibold hover:underline">
+              Read Full Guide →
+            </a>
+            <span class="text-sm text-sand-brown opacity-75">5 min read</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="py-20 bg-sand-white">
+  <div class="container mx-auto px-6">
+    <div class="max-w-2xl mx-auto text-center scroll-reveal">
+      <h2 class="text-3xl font-bold text-sand-brown mb-4">
+        Get New Guides in Your Inbox
+      </h2>
+      <p class="text-lg text-sand-brown mb-8">
+        Be the first to know when I publish a new travel guide. No spam, just good travel content!
+      </p>
+      <form class="flex flex-col sm:flex-row gap-4 justify-center">
+        <input
+          type="email"
+          placeholder="Your email address"
+          class="px-6 py-3 rounded-lg border-2 border-sand-soft focus:border-sand-tan focus:outline-none flex-1 max-w-md"
+          required
+        >
+        <button type="submit" class="btn-primary whitespace-nowrap">
+          Subscribe
+        </button>
+      </form>
+      <p class="text-sm text-sand-brown opacity-75 mt-4">
+        I respect your privacy. Unsubscribe at any time.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-16 bg-sand-tan text-white">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4 scroll-reveal">
+      See Where I've Been
+    </h2>
+    <p class="text-lg mb-6 scroll-reveal">
+      Explore my interactive world map with all my travel destinations.
+    </p>
+    <a href="/maps" class="btn-primary bg-white text-sand-tan hover:bg-opacity-90 inline-block scroll-reveal">
+      View My Map
+    </a>
+  </div>
+</section>
+
+<%- include('partials/footer') %>
