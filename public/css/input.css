@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,12 +9,12 @@
   }
 
   body {
-    @apply font-inter text-charcoal bg-broken-white antialiased;
+    @apply font-sans text-charcoal bg-broken-white antialiased;
     font-feature-settings: 'kern' 1, 'liga' 1;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-outfit font-semibold;
+    @apply font-heading font-semibold;
   }
 }
 

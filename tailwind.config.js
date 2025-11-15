@@ -12,11 +12,11 @@ module.exports = {
         'off-white': '#F5F5F4',
         'pure-white': '#FFFFFF',
 
-        // Blue palette
-        'primary-blue': '#1E40AF',
-        'blue-light': '#3B82F6',
-        'blue-dark': '#1E3A8A',
-        'blue-subtle': '#DBEAFE',
+        // Baby light blue palette
+        'primary-blue': '#89CFF0',
+        'blue-light': '#A8DAFF',
+        'blue-dark': '#6BB6D6',
+        'blue-subtle': '#E6F7FF',
 
         // Forest green palette
         'forest-green': '#065F46',
@@ -31,8 +31,8 @@ module.exports = {
         'border-gray': '#E2E8F0',
       },
       fontFamily: {
-        'outfit': ['Outfit', 'sans-serif'],
-        'inter': ['Inter', 'sans-serif'],
+        'sans': ['-apple-system', 'BlinkMacSystemFont', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+        'heading': ['-apple-system', 'BlinkMacSystemFont', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
       },
       fontSize: {
         'xs': ['0.75rem', { lineHeight: '1rem' }],
